@@ -1,0 +1,20 @@
+section.hero-banner{
+    background-image:url("../images/hero-banner.jpg");
+    background-size:cover;
+    height : 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+h1,h2,h3,h5,h6{
+    color:white;
+}
+button{
+    background-color: #1E90FF;
+}
+button.login.a{
+    color:white;
+    text-decoration:none;
+}
