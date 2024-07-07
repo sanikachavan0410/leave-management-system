@@ -1,4 +1,4 @@
-section.hero-banner{
+/*section.hero-banner{
     background-image:url("../images/hero-banner.jpg");
     background-size:cover;
     height : 100vh; 
@@ -18,3 +18,8 @@ button.login.a{
     color:white;
     text-decoration:none;
 }
+ */   
+ #header
+ {
+    background-color : pink;
+ }

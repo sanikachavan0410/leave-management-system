@@ -1,11 +1,16 @@
+<?php include 'header.php'; ?>
+<!--For Style-->
+<head>
+  <link rel="stylesheet" href="../assets-old/css/styles.css">
+</head>
+
  <!-- ======= Header ======= -->
-  <?php include 'header.php'; ?>
  <header id="header" class="header fixed-top d-flex align-items-center">
 
 <div class="d-flex align-items-center justify-content-between">
   <a href="index.html" class="logo d-flex align-items-center">
     <img src="../assets/images/amp.jpg" alt="">
-    <span class="d-none d-lg-block">AMPV</span>
+    <span class="d-none d-lg-block">AMP</span>
   </a>
   <i class="bi bi-list toggle-sidebar-btn"></i>
 </div><!-- End Logo -->
@@ -23,13 +28,13 @@
     <li class="nav-item dropdown pe-3">
 
       <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-        <img src="assets/images/profile-img.jpg" alt="Profile" class="rounded-circle">
-        <span class="d-none d-md-block dropdown-toggle ps-2">sanika_0410</span>
+        <img src="../assets/images/sanika.jpg" alt="Profile" class="rounded-circle">
+        <span class="d-none d-md-block dropdown-toggle ps-2">Sanika_0410</span>
       </a><!-- End Profile Iamge Icon -->
 
       <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
         <li class="dropdown-header">
-          <h6>sanika chavan</h6>
+          <h6>Siddhi Chavan</h6>
           <span>Web Designer</span>
         </li>
         <li>
@@ -78,6 +83,7 @@
 
   </ul>
 </nav><!-- End Icons Navigation -->
-<?php include 'sidebar.php'; ?>
+
 </header><!-- End Header -->
-<?php include 'footer.php'; ?>
+<?php include 'sidebar.php';?>
+<?php //include 'footer.php';?>
