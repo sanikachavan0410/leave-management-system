@@ -1,7 +1,15 @@
 <?php 
-session_start();
 include '../include/db-connection.php';
-//include '../include/session.php';
+include '../include/session.php';
+
+// Check if user is logged in
+checkLogin();
+
+// Check if user is admin
+if (!isAdmin()) {
+    header('Location: ../login.php');
+    exit();
+}
 // Handle form submissions
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($_POST['add_staff']) && !empty($_POST['email'])) {
@@ -466,9 +474,10 @@ include '../templates/admin-header.php';
                   </div>
                   <div class="form-group col">
                     <label for="department" class="form-label">Department</label>
-                    <select class="form-select" id="updatedepartment_id" name="updatedepartment_id">
-                        <option value="1">Hod</option>
-                        <option value="2">cleanner</option>
+                    <select class="form-select" id="role" name="role">
+                      <?php foreach($roleArray as $val): ?>
+                        <option value="<?php echo $val['id']; ?>"><?php echo $val['name']; ?></option>
+                        <?php endforeach; ?>
                     </select>
                   </div>
                 </div>
